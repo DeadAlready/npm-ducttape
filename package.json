@@ -1,0 +1,33 @@
+{
+  "name": "npm-ducttape",
+  "version": "1.0.0",
+  "description": "Utility for packaging your dependencies along with the code",
+  "main": "index.js",
+  "bin": {
+    "npm-ducttape": "./bin/ducttape.js"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeadAlready/npm-ducttape.git"
+  },
+  "keywords": [
+    "shrinkwrap",
+    "dependencies",
+    "npm",
+    "deploy"
+  ],
+  "author": "Karl Düüna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeadAlready/npm-ducttape/issues"
+  },
+  "homepage": "https://github.com/DeadAlready/npm-ducttape#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "2.4.1",
+    "rimraf": "2.5.2"
+  }
+}
