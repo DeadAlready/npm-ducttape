@@ -4,15 +4,9 @@ A simple script to ducttape your dependencies into a subfolder of your package, 
 
 ## Installation
 
-Installing globally
+Prefer installing globally as installing locally will require you to also add it to package.json as a dependency - otherwise shrinkwrap **WILL** fail.
 
     npm install -g npm-ducttape
-
-Or locally
-
-    npm install npm-ducttape
-    
-PS. You don't need to add ducttape to your repository, it is not required on install
 
 ## Usage
 
@@ -24,14 +18,6 @@ Or if you want to specify a folder
 
     npm-ducttape my-fancy-folder
 
-### Local
-
-    ./node_modules/.bin/npm-ducttape
-    
-Or if you want to specify a folder
-
-    ./node_modules/.bin/npm-ducttape my-fancy-folder
-    
 ## TODO:
 
 1. More tests
