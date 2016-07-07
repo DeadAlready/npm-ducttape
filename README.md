@@ -17,6 +17,19 @@ Prefer installing globally as installing locally will require you to also add it
 Or if you want to specify a folder
 
     npm-ducttape my-fancy-folder
+    
+## Options
+
+### --dev
+
+You can provide the *--dev* flag to *npm-ducttape*. This flag will be passed on to shrinkwrap to include devDependencies in the build.
+
+    npm-ducttape --dev
+
+You can provide both a custom folder and the --dev flag
+
+    npm-ducttape my-fancy-folder --dev
+    
 
 ## TODO:
 

@@ -2,5 +2,8 @@
 
 var path = require('path');
 var ducttape = require('../lib/ducttape');
+var utils = require('../lib/utils');
 
-ducttape.apply(path.resolve(), process.argv[2] || '.packages');
+var opts = utils.getOpts();
+
+ducttape.apply(path.resolve(), opts);

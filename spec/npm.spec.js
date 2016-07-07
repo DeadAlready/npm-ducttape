@@ -74,7 +74,16 @@ describe('NPM', function() {
         var npm = NPM.create(root, target);
         npm.shrinkwrap();
         expect(childProcess.execSync).toHaveBeenCalled();
-        expect(childProcess.execSync).toHaveBeenCalledWith('npm shrinkwrap -s', {cwd: root});
+        expect(childProcess.execSync).toHaveBeenCalledWith('npm shrinkwrap', {cwd: root});
+    });
+
+
+    it('should call npm shrinkwrap with flags', function() {
+        spyOn(childProcess, 'execSync').and.returnValue('wrote npm-shrinkwrap.json');
+        var npm = NPM.create(root, target);
+        npm.shrinkwrap(['--dev']);
+        expect(childProcess.execSync).toHaveBeenCalled();
+        expect(childProcess.execSync).toHaveBeenCalledWith('npm shrinkwrap --dev', {cwd: root});
     });
 
 });
