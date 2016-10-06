@@ -2,7 +2,7 @@
 
 A simple script to ducttape your dependencies into a subfolder of your package, so they can be installed without NPM registry on deploy.
 
-NB! Due to changes in NPM install in version 3.10.8 then shrinkwrap generated with 3.10.8 will not work with earlier versions and vice versa.
+**NB! Due to changes in NPM install in version 3.10.8 then shrinkwrap generated with 3.10.8 will not work with earlier versions and vice versa.**
 
 ## Installation
 
